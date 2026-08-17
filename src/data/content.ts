@@ -59,7 +59,7 @@ export const tsrArticles: ArticleShot[] = [
 ];
 
 export const mentorship = {
-  intro: "I mentored a newly onboarded writer through their first week on the team, logging progress day by day.",
+  intro: "I mentored a problematic writer for a week, significantly improving output quality and reducing time taken to write articles.",
   pageShotLabel: "Mentorship program log, day 1",
   pageSrc: "images/mentorship-log-page-1.jpg",
   pdfUrl: "documents/mentorship-program-log.pdf",
@@ -70,7 +70,7 @@ export const mentorship = {
   ],
   before: [
     "Struggled with article format and structure",
-    "Misused featured images",
+    "Poor choice of featured images",
     "Wrote overly complex sentences",
     "Inconsistent publishing pace without supervision",
   ],
@@ -78,7 +78,7 @@ export const mentorship = {
     "Writing flair and article structure improved",
     "Pieces went publish-ready, cutting editor rework time",
     "Articles began ranking in Google Top Stories and Discover",
-    "Confidence, initiative and motivation all up",
+    "Improved confidence, initiative and motivation to work",
   ],
 };
 
