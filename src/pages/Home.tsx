@@ -30,7 +30,7 @@ export default function Home() {
         <div className="mx-auto w-full max-w-7xl px-6">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
             <Reveal className="mx-auto w-full max-w-sm lg:mx-0">
-              <Shot label="Sauvik Banerjee portrait photo" src="/images/sauvik-portrait.jpg" aspect="aspect-[4/5]" />
+              <Shot label="Sauvik Banerjee portrait photo" src="images/sauvik-portrait.jpg" aspect="aspect-[4/5]" />
             </Reveal>
             <Reveal delay={100}>
               <span className="mb-5 block text-xs font-semibold uppercase tracking-[0.2em] text-accent">
@@ -43,7 +43,7 @@ export default function Home() {
                 <Button href="#experience" variant="primary">
                   See the work ↓
                 </Button>
-                <Button href="/resume.pdf" variant="secondary">
+                <Button href="resume.pdf" variant="secondary">
                   Résumé ↗
                 </Button>
               </div>
@@ -172,7 +172,7 @@ export default function Home() {
           <Reveal>
             <TiltShot
               label="SooperScript homepage screenshot"
-              src="/images/sooperscript-homepage.jpg"
+              src="images/sooperscript-homepage.jpg"
               rotate={TILTS[0]}
               frame="browser"
               aspect="aspect-[16/8]"

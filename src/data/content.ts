@@ -19,7 +19,7 @@ export const website = {
   graphs: [
     {
       label: "Pro Football Action lifetime pageviews graph",
-      src: "/images/pfa-lifetime-pageviews.jpeg",
+      src: "images/pfa-lifetime-pageviews.jpeg",
       aspect: "aspect-[1170/1110]",
       contentBg: "bg-ink",
       stat: "1.8L",
@@ -27,7 +27,7 @@ export const website = {
     },
     {
       label: "Pro Football Action sessions by landing page graph",
-      src: "/images/pfa-website-sessions.jpg",
+      src: "images/pfa-website-sessions.jpg",
       aspect: "aspect-[1600/581]",
       contentBg: "bg-paper",
       stat: "Sessions",
@@ -50,18 +50,18 @@ export interface ArticleShot {
 }
 
 export const tsrArticles: ArticleShot[] = [
-  { label: "TSR article: Travis Hunter debut game", src: "/images/tsr-article-travis-hunter.jpg", pageviews: 512960 },
-  { label: "TSR article: Patrick Mahomes dream mansion", src: "/images/tsr-article-mahomes-mansion.jpg", pageviews: 333539 },
-  { label: "TSR article: Shedeur Sanders' Mercedes Maybach", src: "/images/tsr-article-shedeur-sanders.jpg", pageviews: 274257 },
-  { label: "TSR title: Tyreek Hill gifting his parents cars", src: "/images/tsr-title-tyreek-hill.jpg", pageviews: 463951 },
-  { label: "TSR title: The Rock responds to Colin Kaepernick", src: "/images/tsr-title-kaepernick-rock.jpg", pageviews: 447942 },
-  { label: "TSR title: Odell Beckham Jr. Ravens deal", src: "/images/tsr-title-odell-beckham.jpg", pageviews: 283557 },
+  { label: "TSR article: Travis Hunter debut game", src: "images/tsr-article-travis-hunter.jpg", pageviews: 512960 },
+  { label: "TSR article: Patrick Mahomes dream mansion", src: "images/tsr-article-mahomes-mansion.jpg", pageviews: 333539 },
+  { label: "TSR article: Shedeur Sanders' Mercedes Maybach", src: "images/tsr-article-shedeur-sanders.jpg", pageviews: 274257 },
+  { label: "TSR title: Tyreek Hill gifting his parents cars", src: "images/tsr-title-tyreek-hill.jpg", pageviews: 463951 },
+  { label: "TSR title: The Rock responds to Colin Kaepernick", src: "images/tsr-title-kaepernick-rock.jpg", pageviews: 447942 },
+  { label: "TSR title: Odell Beckham Jr. Ravens deal", src: "images/tsr-title-odell-beckham.jpg", pageviews: 283557 },
 ];
 
 export const mentorship = {
   pageShotLabel: "Mentorship program log, day 1",
-  pageSrc: "/images/mentorship-log-page-1.jpg",
-  pdfUrl: "/documents/mentorship-program-log.pdf",
+  pageSrc: "images/mentorship-log-page-1.jpg",
+  pdfUrl: "documents/mentorship-program-log.pdf",
   stats: [
     { value: "7 days", label: "Mentorship sprint" },
     { value: "5/day", label: "Articles published" },
@@ -86,28 +86,28 @@ export const socialProfiles = [
     platform: "Instagram",
     handle: "@profootballaction",
     followers: "7,802 followers",
-    src: "/images/pfa-instagram-profile.jpg",
+    src: "images/pfa-instagram-profile.jpg",
     url: "https://www.instagram.com/profootballaction/",
   },
   {
     platform: "YouTube",
     handle: "@ProFootballAction",
     followers: "152 subscribers",
-    src: "/images/pfa-youtube-channel.jpg",
+    src: "images/pfa-youtube-channel.jpg",
     url: "https://www.youtube.com/@ProFootballAction",
   },
   {
     platform: "Facebook",
     handle: "Deion Sanders Fan Club",
     followers: "92K followers",
-    src: "/images/pfa-facebook-page.jpg",
+    src: "images/pfa-facebook-page.jpg",
     url: "https://www.facebook.com/profile.php?id=61550786892131",
   },
 ];
 
 export const facebookGrowth = {
   label: "Pro Football Action Facebook page views graph",
-  src: "/images/facebook-page-metrics.jpg",
+  src: "images/facebook-page-metrics.jpg",
   views: "100.2M",
   detail: "All-organic page views, 0 from ads.",
 };
@@ -117,25 +117,25 @@ export const socialProof = [
     name: "Shaquille O'Neal",
     detail: "Reshared Pro Football Action content to his Instagram Story.",
     shotLabel: "Shaquille O'Neal Instagram Story share screenshot",
-    src: "/images/shaq-ig-story-share.jpg",
+    src: "images/shaq-ig-story-share.jpg",
   },
   {
     name: "Chad Johnson",
     detail: "126K impressions on a Pro Football Action post.",
     shotLabel: "Chad Johnson engagement screenshot",
-    src: "/images/chad-johnson-tweet.jpg",
+    src: "images/chad-johnson-tweet.jpg",
   },
   {
     name: "Terrell Owens · Jimmy Smith · Deion Sanders",
     detail: "Liked a Pro Football Action Instagram post.",
     shotLabel: "Terrell Owens, Jimmy Smith and Deion Sanders liking an Instagram post",
-    src: "/images/nfl-drilltown-likes.jpg",
+    src: "images/nfl-drilltown-likes.jpg",
   },
   {
     name: "Antonio Brown",
     detail: "Shared an EssentiallySports headline I assigned.",
     shotLabel: "Antonio Brown share screenshot",
-    src: "/images/antonio-brown-share.jpg",
+    src: "images/antonio-brown-share.jpg",
   },
 ];
 
@@ -144,21 +144,21 @@ export const wagLife = {
   shots: [
     {
       label: "WAG Life newsletter signup page",
-      src: "/images/wag-life-site.jpg",
+      src: "images/wag-life-site.jpg",
       aspect: "aspect-[604/1200]",
       overlayTitle: "WAG Life",
       overlayDetail: "11,000+ subscriber community",
     },
     {
       label: "WAG Life subscriber growth graph",
-      src: "/images/wag-life-growth.jpg",
+      src: "images/wag-life-growth.jpg",
       aspect: "aspect-[1200/835]",
       overlayTitle: "Subscriber growth",
       overlayDetail: "+11,582 in the last 12 months",
     },
     {
       label: "WAG Life open rate and click-to-open rate metrics",
-      src: "/images/wag-life-metrics.jpg",
+      src: "images/wag-life-metrics.jpg",
       aspect: "aspect-[1400/371]",
       overlayTitle: "Engagement",
       overlayDetail: "35.03% open rate · 7.89% click-to-open",
