@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from "react";
+import { useState, type CSSProperties, type ReactNode } from "react";
 import Shot from "./Shot";
 
 interface TiltShotProps {
@@ -22,19 +22,26 @@ export default function TiltShot({
   fit = "cover",
   contentBg,
 }: TiltShotProps) {
+  const [active, setActive] = useState(false);
+
   return (
     <div
       tabIndex={0}
+      onClick={() => setActive((v) => !v)}
       className="group relative cursor-pointer select-none outline-none"
       style={{ "--tilt": `${rotate}deg` } as CSSProperties}
     >
       <div
         className="[transform:rotate(var(--tilt))] overflow-hidden rounded-2xl border-2 border-line shadow-[0_16px_40px_-24px_rgba(10,10,10,0.35)] transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:[transform:rotate(0deg)_scale(1.02)] group-hover:border-accent group-focus-visible:[transform:rotate(0deg)_scale(1.02)] group-focus-visible:border-accent"
+        style={active ? { transform: "rotate(0deg) scale(1.02)", borderColor: "var(--color-accent)" } : undefined}
       >
         <Shot label={label} src={src} frame={frame} aspect={aspect} fit={fit} {...(contentBg ? { contentBg } : {})} />
       </div>
 
-      <div className="pointer-events-none absolute inset-x-3 bottom-3 translate-y-2 rounded-xl bg-ink/90 px-4 py-2.5 opacity-0 backdrop-blur-sm transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100">
+      <div
+        className="pointer-events-none absolute inset-x-3 bottom-3 translate-y-2 rounded-xl bg-ink/90 px-4 py-2.5 opacity-0 backdrop-blur-sm transition-all duration-[400ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100"
+        style={active ? { translate: "0px 0px", opacity: 1 } : undefined}
+      >
         {overlay}
       </div>
     </div>
