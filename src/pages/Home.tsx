@@ -101,6 +101,7 @@ export default function Home() {
 
         <Reveal delay={60} className="mb-6 mt-16">
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Mentorship</span>
+          <p className="mt-3 max-w-2xl text-mute">{mentorship.intro}</p>
         </Reveal>
         <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
           <Reveal>
@@ -127,7 +128,7 @@ export default function Home() {
 
             <div className="mt-8 grid grid-cols-2 gap-8">
               <div>
-                <div className="text-xs font-semibold uppercase tracking-[0.14em] text-mute-dark">Before</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.14em] text-mute-dark">Before mentoring</div>
                 <ul className="mt-3 space-y-2">
                   {mentorship.before.map((line) => (
                     <li key={line} className="flex gap-2 text-sm text-mute">
@@ -138,7 +139,7 @@ export default function Home() {
                 </ul>
               </div>
               <div>
-                <div className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">After</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">After mentoring</div>
                 <ul className="mt-3 space-y-2">
                   {mentorship.after.map((line) => (
                     <li key={line} className="flex gap-2 text-sm text-mute">

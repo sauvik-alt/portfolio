@@ -59,6 +59,7 @@ export const tsrArticles: ArticleShot[] = [
 ];
 
 export const mentorship = {
+  intro: "I mentored a newly onboarded writer through their first week on the team, logging progress day by day.",
   pageShotLabel: "Mentorship program log, day 1",
   pageSrc: "images/mentorship-log-page-1.jpg",
   pdfUrl: "documents/mentorship-program-log.pdf",
