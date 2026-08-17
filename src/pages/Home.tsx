@@ -71,7 +71,7 @@ export default function Home() {
         <Reveal delay={60} className="mb-6">
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Articles/Titles by me</span>
         </Reveal>
-        <div className="grid grid-cols-2 gap-x-10 gap-y-14 px-1 py-4 sm:gap-x-14">
+        <div className="grid grid-cols-1 gap-x-10 gap-y-14 px-1 py-4 sm:grid-cols-2 sm:gap-x-14">
           {tsrArticles.map((item, i) => (
             <Reveal delay={i * 50} key={item.label}>
               <TiltShot
