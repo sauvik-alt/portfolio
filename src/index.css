@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+
+  --color-ink: #0d0d12;
+  --color-ink-soft: #1a1a22;
+  --color-paper: #ffffff;
+  --color-paper-dim: #f6f4fb;
+  --color-line: #e7e3f2;
+  --color-line-dark: #2a2a35;
+  --color-mute: #6b6a75;
+  --color-mute-dark: #9997a3;
+  --color-accent: #7c3aed;
+  --color-accent-dim: #6425d1;
+  --color-accent-soft: #f2ecfe;
+  --color-accent-border: #ddccfa;
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-paper);
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+  }
+
+  .reveal.is-visible {
+    animation: var(--animate-fade-up);
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .bg-hero-field {
+    background-image:
+      radial-gradient(ellipse 60% 50% at 50% 0%, var(--color-accent-soft) 0%, transparent 60%),
+      radial-gradient(circle, var(--color-line) 1px, transparent 1px);
+    background-size:
+      100% 100%,
+      28px 28px;
+    background-position: center, center;
+  }
+}
